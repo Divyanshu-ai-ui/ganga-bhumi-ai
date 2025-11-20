@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ganga Bhumi AI Agent</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #fff2e6;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Floating Mascot */
+    #mascot {
+      position: fixed;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 180px;
+      animation: float 3s infinite ease-in-out;
+      transition: transform 0.3s;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(-50%) translateX(0); }
+      50% { transform: translateY(-55%) translateX(10px); }
+      100% { transform: translateY(-50%) translateX(0); }
+    }
+
+    /* Lip sync animation */
+    .talk {
+      animation: talkAnim 0.15s infinite;
+    }
+
+    @keyframes talkAnim {
+      0% { transform: scaleY(1); }
+      50% { transform: scaleY(0.8); }
+      100% { transform: scaleY(1); }
+    }
+
+    /* Chat UI */
+    #chatbox {
+      width: 400px;
+      margin: 50px;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ffcc99;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Floating Mascot -->
+<img id="mascot" src="mascot.png" />
+
+<div id="chatbox">
+  <h2>Ganga Bhumi AI Agent</h2>
+  <div id="output"></div>
+
+  <input id="msg" placeholder="Ask something..." style="width:300px;">
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+async function sendMessage() {
+  const q = document.getElementById("msg").value;
+  document.getElementById("output").innerHTML += `<p><b>You:</b> ${q}</p>`;
+
+  // Start lip sync
+  document.getElementById("mascot").classList.add("talk");
+
+  const response = await fetch("/api/chat", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ message: q })
+  });
+
+  const data = await response.json();
+
+  // Stop lip sync after reply
+  document.getElementById("mascot").classList.remove("talk");
+
+  document.getElementById("output").innerHTML += `<p><b>AI:</b> ${data.reply}</p>`;
+}
+</script>
+
+</body>
+</html>
