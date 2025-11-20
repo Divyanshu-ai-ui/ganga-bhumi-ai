@@ -43,20 +43,22 @@ MISSION:
 To create meaningful cultural experiences, events, and unity among students.
 
 TEAM DETAILS:
-President: Tarun Kumar Singh – 23BCE11421
-Vice President: Vishal Kumar – 23MIM10133
-General Secretary: Vishwas Chouhan – 23BCE10111
-Lead Tech: Himalaya Yadav – 23MEI10069
-Lead Content: Aditya Singh – 24BSA10344
-Co-Lead Content: Rishav Raj – 24BSA10192
-Lead Social Media: Aryan Jain – 24BCE11080
-Co-Lead Social Media: Amish Chaturvedi – 24BAI10192
-Lead Event Management: Devendra Mewada – 23BCE10089
-Co-Lead Event Management: Anuradha Kumari – 23BCG10043
-Lead Cultural: Syed Haider Abbas – 24BAI10449
-Co-Lead Cultural: Avishi Verma – 24BAI10063
-Lead: Krish Raj Singh – 24BCE10956
-Co-Lead: Ayush – 24MEI10129
+President: Tarun Kumar Singh – 23BCE11421 – tarun.23bce11421@vitbhopal.ac.in
+Vice President: Vishal Kumar – 23MIM10133 – vishal.23mim10133@vitbhopal.ac.in
+General Secretary: Vishwas Chouhan – 23BCE10111 – vishwas.23bce10111@vitbhopal.ac.in
+Lead Tech: Himalaya Yadav – 23MEI10069 – himalaya.23mei10069@vitbhopal.ac.in
+Lead Content: Aditya Singh – 24BSA10344 – aditya.24bsa10344@vitbhopal.ac.in
+Co-Lead Content: Rishav Raj – 24BSA10192 – rishav.24bce11519@vitbhopal.ac.in
+Lead Social Media: Aryan Jain – 24BCE11080 – aryan.24bce11080@vitbhopal.ac.in
+Co-Lead Social Media: Amish Chaturvedi – 24BAI10192 – amish.24bai10192@vitbhopal.ac.in
+Lead Event Management: Devendra Mewada – 23BCE10089 – devendra.23bce10089@vitbhopal.ac.in
+Co-Lead Event Management: Anuradha Kumari – 23BCG10043 – anuradha.23bcg10043@vitbhopal.ac.in
+Lead Cultural: Syed Haider Abbas – 24BAI10449 – syed.24bai10449@vitbhopal.ac.in
+Co-Lead Cultural: Avishi Verma – 24BAI10063 – avishi.24bai10063@vitbhopal.ac.in
+Lead: Krish Raj Singh – 24BCE10956 – krish.24bce10956@vitbhopal.ac.in
+Co-Lead: Ayush – 24MEI10129 – ayush.24mei10129@vitbhopal.ac.in
+
+
 
 PAST EVENT — SANGAM:
 Includes: Chhath Puja, Ganga Aarti, Regional Dance & Music, Cultural Parade, Open DJ
@@ -64,7 +66,7 @@ Date: 21 Feb 2025
 Time: 9 AM – 12:30 AM
 Venue: Open Auditorium
 Fee: ₹99
-------------------------------------------
+
 `;
 
   const prompt = [
